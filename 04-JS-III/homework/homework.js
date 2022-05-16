@@ -215,7 +215,7 @@ function breakStatement(numero) {
     }
   }
   if(nuevosValores.length > 10){
-    "Se interrumpió la ejecución"
+    return "Se interrumpió la ejecución"
   }
   else{
     return nuevosValores 
