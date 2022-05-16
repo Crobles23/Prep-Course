@@ -161,7 +161,7 @@ function todosIguales(arreglo) {
   //Escribe tu código aquí  
  var asd = arreglo[0];
  for(var i = 0; i < arreglo.length; i++){
-   if(arreglo [i] !== asd){
+   if(arreglo[i] !== asd){
      return false;
    }
  } 
@@ -174,7 +174,7 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   var arrayConLosMesesEncontrados = [];
-  for (var i = 0; 1 < array.length; i++){
+  for (var i = 0; i < array.length; i++){
     if ( 
       array[i] === "Enero" || 
       array[i] === "Marzo" || 
@@ -194,6 +194,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  var arrayConNumMayoresACien = [];
+  for(var i = 0; i < array.length; i++){
+    if(array[i] > 100){
+      arrayConNumMayoresACien.push(array[i])
+    }
+  }
+  return arrayConNumMayoresACien;
 }
 
 function breakStatement(numero) {
@@ -210,11 +217,11 @@ function breakStatement(numero) {
     if(numero === i){
       break
     }
-    else {
+    else{
       nuevosValores.push(numero);
     }
   }
-  if(nuevosValores.length > 10){
+  if(nuevosValores.length < 10){
     return "Se interrumpió la ejecución"
   }
   else{
@@ -229,6 +236,17 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var arrConValores = [];
+  for (var i = 0; i < 10; i++){
+    if(i === 5){
+      continue;
+    }
+    else{
+      numero = numero + 2;
+      arrConValores.push(numero);
+    }
+  }
+  return arrConValores;
 }
 
 
