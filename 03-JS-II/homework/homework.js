@@ -5,11 +5,8 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x > y) {
-    return x;
-  } else {
-    return y;
-  }
+  if (x > y) {return x;} else if(y > x){return y;}
+  else{return x || y;}
 }
 
 function mayoriaDeEdad(edad) {
@@ -89,7 +86,8 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  return numero < 50 && numero > 20;
+  //return numero < 50 && numero > 20;
+  if(numero < 50 && numero > 20){return true;} return false;
 }
 
 function esEntero(numero) {
@@ -100,7 +98,9 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  return Math.floor(numero) === numero 
+  //return Math.floor(numero) === numero 
+  if((numero * 2) % 2 === 0){return true;}
+  else if(numero % 2 !== 0){return false;}
 }
 
 function fizzBuzz(numero) {
@@ -108,7 +108,7 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if ( numero % 3 === 0 && numero % 5 === 0 ){
+ if ( numero % 3 === 0 && numero % 5 === 0 ){
     return "fizzbuzz";
   }
   if (numero % 5 === 0){
@@ -117,7 +117,16 @@ function fizzBuzz(numero) {
   if (numero % 3 === 0){
     return "fizz";
   }
-  return numero
+  return numero;
+  /*if (numero % 5 === 0){
+    return "buzz";
+  }
+  if (numero % 3 === 0){
+    return "fizz";
+  }
+  if ( numero % 3 === 0 && numero % 5 === 0 ){
+    return "fizzbuzz";
+  }return numero*/
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -168,9 +177,9 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
   if (valor === true){
-    return "Soy verdadero"
+    return "Soy verdadero";
   }
-  return "Soy falso"
+  return "Soy falso";
 }
 
 function tablaDelSeis(){
@@ -198,13 +207,20 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var contadorDeVueltas = 0;
+  /*var contadorDeVueltas = 0;
   do{
     numero = numero + 5;
     contadorDeVueltas = contadorDeVueltas + 1;
   }
   while(contadorDeVueltas < 8);
-  return numero;
+  return numero;*/
+  var contador = 8;
+  var resultado = 0;
+  do{
+    resultado += 5;
+    contador -= 1;
+  }while(contador !== 0)
+  return resultado + numero;
 }
 
 
