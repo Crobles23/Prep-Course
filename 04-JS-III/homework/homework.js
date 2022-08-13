@@ -23,14 +23,8 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
- //var novo = [];
- //for(var i = 0; i < array.length; i++){
-  //novo.push(array[i]+1)
- //}return novo;
-
-var divina = [];
-for(var i = 0; i < array.length; i++){divina.push(array[i]+1)} return divina;
-
+ let morral = [];
+ for(let i = 0; i < array.length; i++ ){morral.push(array[i]+1)} return morral;
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -39,7 +33,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Tu código:
   //array[array.length] = elemento;
   //return array;
-  array.push(elemento);{return array;}
+  array.push(elemento);
+  return array;
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
@@ -49,7 +44,6 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // Tu código:
 array.unshift(elemento);
 return array;
-//array[0] = 'elemento';{return array;} no funja 
 }
 
 function dePalabrasAFrase(palabras) {
@@ -58,33 +52,23 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return palabras.join(" ");
+  let taxicerro = palabras.join(" ");
+  return taxicerro;
 }
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
- /* for(var i  = 0; i < array.length; i++){
-    if(array[i] === elemento){
-      return true;
-    }
-  }
-  return false;*/
-  for(let i = 0; i < array.length; i++){if(array[i] === elemento){return  true;}}return false;
+ for(let i = 0; i < array.length; i++){if(array[i] === elemento){return true;}}return false;
 }
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
- /* var sum = 0;
-  for(var i = 0; i < numeros.length; i++){
-    sum = sum + numeros[i];
-  }
-  return sum;*/
-  let newo = 0
-  for(let i = 0; i < numeros.length; i++){newo += numeros[i];} return newo;
+  let quincho = 0;
+  for(let i = 0; i < numeros.length; i++){quincho += numeros[i]} return quincho;
 }
 
 function promedioResultadosTest(resultadosTest) {
@@ -97,8 +81,8 @@ function promedioResultadosTest(resultadosTest) {
   }
   var prom = sum / resultadosTest.length;
   return prom;*/
-  let cambi = 0;
-  for(let i = 0; i < resultadosTest.length;  i++){cambi += resultadosTest[i];} return cambi / resultadosTest.length;
+  let vestidoNegro = 0;
+  for(let i = 0; i < resultadosTest.length; i++){vestidoNegro += resultadosTest[i]} return vestidoNegro/resultadosTest.length;
 }
 
 function numeroMasGrande(numeros) {
@@ -107,38 +91,24 @@ function numeroMasGrande(numeros) {
   // Tu código:
   //let cajita = 0;
   //for(let i = 0; i < numeros.length; i++){if(numeros[i] > cajita){cajita = numeros[i];}} return cajita;
-  var maxi = Math.max(... numeros);
-  return maxi;
+  return Math.max(... numeros);
 }
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
- /*if (arguments.length < 1){
-    return 0;
-  }
-  var product = 1;
-  for(var i = 0; i < arguments.length; i++){
-product = product * arguments[i];
-  }
-  return product;*/
-  let jogo = 1;
   if(arguments.length === 0){return 0;}
   else if(arguments.length === 1){return arguments[0];}
-  else{for(let i = 0; i < arguments.length; i++){jogo = jogo * arguments[i];}}return jogo;
+  let tacosDorados = 1;
+  for(let i = 0; i < arguments.length; i++){tacosDorados *= arguments[i]} return tacosDorados;
 }
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  var mayores = [];
-  for(var i = 0; i < arreglo.length; i++){
-    if(arreglo[i] > 18){
-      mayores.push(arreglo[i])
-    }
-  }
-return mayores.length;
+  let SuSonrisota = [];
+  for(let i = 0; i < arreglo.length; i++){if(arreglo[i] > 18){SuSonrisota.push(arreglo[i])}} return SuSonrisota.length;
 }
 
 function diaDeLaSemana(numeroDeDia) {
@@ -146,12 +116,9 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  if(numeroDeDia === 1 || numeroDeDia === 7){
-    return "Es fin de semana";
-  }
-  //if(numeroDeDia > 1 && numeroDeDia < 7){
-    return "Es dia Laboral";
-  //}
+  if(numeroDeDia === 1 || numeroDeDia === 7){return "Es fin de semana";} 
+  else if(numeroDeDia > 1 && numeroDeDia < 7){return "Es dia Laboral";}
+  else{return "No es un dia";}
 } 
 
 function empiezaConNueve(n) {
@@ -163,9 +130,8 @@ function empiezaConNueve(n) {
     return true;
   }
   return false;*/
-  let fpatrias = n.toString();
-  if(fpatrias[0] === "9"){return true;}
-  return false;
+  let siuuu = n.toString();
+  if(siuuu[0] === "9"){return true;} return false;
 }
 
 function todosIguales(arreglo) {
@@ -179,7 +145,7 @@ function todosIguales(arreglo) {
    }
  } 
  return true;*/
-for(let i = 0; i < arreglo.length -1; i++){if(arreglo[i]!==arreglo[i+1]){return false;}} return true;
+for(let i = 0; i < arreglo.length  -1; i++){if(arreglo[i] !== arreglo[i+1]){return false;}} return true;
 } 
 
 function mesesDelAño(array) {
@@ -187,26 +153,18 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  let cartera = [];
-  for(let i = 0; i < array.length; i++){
-    if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
-      cartera.push(array[i])
-    }
-  } if(cartera.length !== 3){return "No se encontraron los meses pedidos";}
-  return cartera;
+  let pisaPie = [];
+  for(let i = 0; i < array.length; i++){if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){pisaPie.push(array[i])}}
+  if(pisaPie.length !== 3){return "No se encontraron los meses pedidos"}
+  return pisaPie;
 }
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-  var arrayConNumMayoresACien = [];
-  for(var i = 0; i < array.length; i++){
-    if(array[i] > 100){
-      arrayConNumMayoresACien.push(array[i])
-    }
-  }
-  return arrayConNumMayoresACien;
+  let pacifico = [];
+  for(let i = 0; i < array.length; i++){if(array[i] > 100){pacifico.push(array[i])}} return pacifico; 
 }
 
 function breakStatement(numero) {
@@ -217,10 +175,9 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  let casco = [];
-  for(let i = 0; i < 10; i++){
-    numero = numero + 2; if(numero === i){break;} else{casco.push(numero)}}
-    if(casco.length < 10) {return "Se interrumpió la ejecución"} else{return casco;}
+  let tabasBlancas = [];
+  for(let i = 0; i < 10; i++){numero += 2; if(numero === i){break;} else{tabasBlancas.push(numero)}}
+  if(tabasBlancas.length !== 10){return "Se interrumpió la ejecución"} else{return tabasBlancas;}
 }
 
 function continueStatement(numero) {
@@ -230,17 +187,9 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  var arrConValores = [];
-  for (var i = 0; i < 10; i++){
-    if(i === 5){
-      continue;
-    }
-    else{
-      numero = numero + 2;
-      arrConValores.push(numero);
-    }
-  }
-  return arrConValores;
+  let cruda = [];
+  for(let i = 0; i < 10; i++){if(i === 5){continue;} else{numero += 2; cruda.push(numero)}}
+  return cruda;
 }
 
 
