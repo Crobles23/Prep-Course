@@ -1,19 +1,19 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "Criss";
+const nuevaString = "Estrella";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 24;
+const nuevoNum = 20;
 
 // Crea una variable booleana:
-const nuevoBool = true;
+const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
@@ -60,7 +60,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (x == y) {
+    if (x === y) {
       return true;
     }
   return false;    
@@ -70,7 +70,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.length == str2.length) {
+  if (str1.length === str2.length) {
     return true;
   }
   return false;
@@ -99,7 +99,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return x % y ;
+  return (x % y);
 }
 
 function esPar(num) {
@@ -239,9 +239,8 @@ function esVocal(letra){
   if (letra.length !== 1){
     return "Dato incorrecto";
   }
-  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u")
-    return "Es vocal";
-    return "Dato incorrecto";
+  else if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){return "Es vocal";}
+  return "Dato incorrecto";
   
 }
 
