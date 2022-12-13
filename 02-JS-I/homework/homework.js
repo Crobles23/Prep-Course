@@ -4,7 +4,7 @@
 const nuevaString = "Estrella";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 20;
+const nuevoNum = 24;
 
 // Crea una variable booleana:
 const nuevoBool = false;
@@ -60,10 +60,8 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (x === y) {
-      return true;
-    }
-  return false;    
+  if(x === y){return true;}
+  return false;  
 }
 
 function tienenMismaLongitud(str1, str2) {
@@ -116,7 +114,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 != 0){
+  if (num % 2 !== 0){
     return true;
   }
   return false;
@@ -164,15 +162,11 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0){
-    return "Es positivo";
-  }
-  else if (numero < 0){
-    return "Es negativo";
-  }
-else (numero === 0)
-  return false;
 
+  if (numero > 0){return "Es positivo";}
+  else if (numero < 0){return "Es negativo";}
+  else (numero === 0)
+  return false;
 }
 
 function agregarSimboloExclamacion(str) {
@@ -217,7 +211,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-return (base * altura) / 2;
+return base * altura / 2;
 }
 
 
@@ -236,12 +230,14 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra.length !== 1){
+  /*if (letra.length !== 1){
     return "Dato incorrecto";
   }
   else if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){return "Es vocal";}
+  return "Dato incorrecto";*/
+  if(letra.length > 1){return "Dato incorrecto";}
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){return "Es vocal";}
   return "Dato incorrecto";
-  
 }
 
 
