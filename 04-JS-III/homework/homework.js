@@ -9,13 +9,13 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-return array[array.length -1];
+  return array[array.length -1];
 }
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-return array.length;
+  return array.length;
 }
 
 function incrementarPorUno(array) {
@@ -23,9 +23,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
- let caja = [];
- for(let i = 0; i < array.length; i++){caja.push(array[i]+1)}
- return caja;
+  let nuevoArray = [];
+  for(let i = 0; i < array.length; i++){nuevoArray.push(array[i]+1);}
+  return nuevoArray;
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -61,17 +61,17 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
- for(let i = 0; i < array.length; i++){if(array[i] === elemento){return true;}}
- return false;
+  for(let i = 0; i < array.length; i++){if(array[i] === elemento){return true;}}
+  return false;
 }
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  let cartera = 0;
-  for(let i = 0; i < numeros.length; i++){cartera += numeros[i]}
-  return cartera;
+  let cajilla = 0;
+  for(let i = 0; i < numeros.length; i++){cajilla += numeros[i];}
+  return cajilla;
 }
 
 function promedioResultadosTest(resultadosTest) {
@@ -84,10 +84,9 @@ function promedioResultadosTest(resultadosTest) {
   }
   var prom = sum / resultadosTest.length;
   return prom;*/
-  let integr = 0; 
-  for(let i = 0; i < resultadosTest.length; i++){integr += resultadosTest[i]}
-  let prom = integr / resultadosTest.length;
-  return prom;
+  var nuevaCaja = 0;
+  for(let i = 0; i < resultadosTest.length; i++){nuevaCaja += resultadosTest[i];}
+  return nuevaCaja / resultadosTest.length;
 }
 
 function numeroMasGrande(numeros) {
@@ -95,28 +94,28 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
   //return Math.max(... numeros);
-  let suMochila = 0;
-  for(let i = 0; i < numeros.length; i++){if(numeros[i] > suMochila){suMochila = numeros[i];}}
-  return suMochila;
+  let suBolso = 0;
+  for(let i = 0; i < numeros.length; i++){if(numeros[i] > suBolso){suBolso = numeros[i];}}
+  return suBolso;
 }
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  let bag = 1;
+  let cajita = 1;
   if(arguments.length === 0){return 0;}
   if(arguments.length === 1){return arguments[0];}
-  for(let i = 0; i < arguments.length; i++){bag *= arguments[i]}
-  return bag;
+  for(let i = 0; i < arguments.length; i++){cajita *= arguments[i];}
+  return cajita;
 }
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-  let suSonrisota = [];
-  for(let i = 0; i < arreglo.length; i++){if(arreglo[i] > 18){suSonrisota.push(arreglo[i])}}
-  return suSonrisota.length;
+  let suCarita = [];
+  for(let i = 0; i < arreglo.length; i++){if(arreglo[i] > 18){suCarita.push(arreglo[i]);}}
+  return suCarita.length;
 }
 
 function diaDeLaSemana(numeroDeDia) {
@@ -125,7 +124,7 @@ function diaDeLaSemana(numeroDeDia) {
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
   if(numeroDeDia === 1 || numeroDeDia === 7){return "Es fin de semana";}
-  else if(numeroDeDia > 1 && numeroDeDia < 7){return "Es dia Laboral";}
+  if(numeroDeDia > 1 && numeroDeDia < 7){return "Es dia Laboral";}
 } 
 
 function empiezaConNueve(n) {
@@ -133,8 +132,8 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   //var num = String(n);
-  let sirioB123 = n.toString()
-  if(sirioB123[0] === "9"){return true;}
+  let artemisa = n.toString()
+  if(artemisa[0] === "9"){return true;}
   return false;
 }
 
@@ -149,8 +148,8 @@ function todosIguales(arreglo) {
    }
  } 
  return true;*/
-for(let i = 0; i < arreglo.length -1; i++){if(arreglo[i] !== arreglo[i+1]){return false;}}
-return true;
+  for(let i = 0; i < arreglo.length -1; i++){if(arreglo[i] !== arreglo[i+1]){return false;}}
+  return true;
 } 
 
 function mesesDelAño(array) {
@@ -158,19 +157,20 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  let sirioB123 = [];
-  for(let i = 0; i < array.length; i++){if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){sirioB123.push(array[i])}}
-  if(sirioB123.length !== 3){return "No se encontraron los meses pedidos"}
-  return sirioB123;
+  let miLuna = [];
+  for(let i = 0; i < array.length; i++){if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){miLuna.push(array[i]);}}
+  if(miLuna.length !== 3){return "No se encontraron los meses pedidos";}
+  return miLuna;
+
 }
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-   let sirioB123 = [];
-   for(let i = 0; i < array.length; i++){if(array[i] > 100){sirioB123.push(array[i])}}
-   return sirioB123;
+  let casillero = [];
+  for(let i = 0; i < array.length; i++){if(array[i] > 100){casillero.push(array[i]);}}
+  return casillero; 
 }
 
 function breakStatement(numero) {
@@ -181,10 +181,10 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  let sirioB123  = [];
-  for(let i = 0; i < 10; i++){numero += 2; if(numero === i){break;}else{sirioB123.push(numero)}}
-  if(sirioB123.length !== 10){return "Se interrumpió la ejecución"}
-  return sirioB123;
+  let suMirada = [];
+  for(let i = 0; i < 10; i++){numero += 2; if(numero  === i){break;}else{suMirada.push(numero)};}
+  if(suMirada.length !== 10){return "Se interrumpió la ejecución"};
+  return suMirada;
 }
 
 function continueStatement(numero) {
@@ -197,9 +197,9 @@ function continueStatement(numero) {
   //let cobarde = [];
   //for(let i = 0; i < 10; i++){numero += 2; if(i === 5){continue;} else{cobarde.push(numero)}}
   //return cobarde;
-  let cobarde = [];
-  for(let i = 0; i < 10; i++){if(i === 5){continue;} else{numero += 2; cobarde.push(numero)}}
-  return cobarde;
+  let myPouch = [];
+  for(let i = 0; i < 10; i++){if(i === 5){continue;} else{numero += 2; myPouch.push(numero)}}
+  return myPouch;
 }
 
 
