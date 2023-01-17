@@ -8,16 +8,14 @@ function crearUsuario() {
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
-  class Usuario{
-    constructor(opciones){
-      this.usuario = opciones.usuario,
-      this.nombre = opciones.nombre,
-      this.email = opciones.email,
-      this.password = opciones.password
-    }
-    saludar(){
-      return "Hola, mi nombre es " + this.nombre
-    }
+  function Usuario(opciones){
+    this.usuario = opciones.usuario,
+    this.nombre = opciones.nombre,
+    this.email = opciones.email,
+    this.password = opciones.password
+  }
+  Usuario.prototype.saludar = function saludar(){
+    return "Hola, mi nombre es " + this.nombre;
   }
   return Usuario;
 }
@@ -54,22 +52,23 @@ function agregarStringInvertida() {
     //   Edad: 22,
     //   Domicilio: 'Saavedra 123'
     //  }
-
-  class Persona {
-    constructor(nombre, apellido, edad, domicilio) {
-      this.nombre = nombre,
-      this.apellido = apellido,
-      this.edad = edad,
-      this.domicilio = domicilio,
-      this.detalle = function(){return{
-        Nombre: nombre,
-        Apellido: apellido,
-        Edad: edad,
-        Domicilio: domicilio,
+    class Persona {
+      constructor(nombre, apellido, edad, domicilio) {
+        this.nombre = nombre
+        this.apellido = apellido
+        this.edad = edad
+        this.domicilio = domicilio
+        }
+      detalle(){
+      let objeto = {
+          nombre: this.nombre,
+          apellido: this.apellido,
+          edad: this.edad,
+          domicilio: this.domicilio
       } 
-    }
+      return objeto;
+      }
   }
-}
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
@@ -86,7 +85,6 @@ function agregarMetodo() {
   Persona.prototype.datos = function (){
     return this.nombre + ", " + this.edad +  " años";
   }
-  
 }
   
 
