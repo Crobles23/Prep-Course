@@ -31,10 +31,13 @@ let edades = [22, 26, 18, 24, 25];
 // cajita.forEach(recorrido)
 
 let mochila = cajita.map(
-    function(amigo){
-        return "Querido(a) " + amigo
+    function(amigo, ind){
+        //return "Querido(a) " + amigo + ind
+        return amigo[ind]
     }
 )
+
+console.log(mochila);
 
 //console.log(mochila)
 function reducto(redu, valore){
@@ -50,4 +53,4 @@ let probando = edades.reduce(function(acum, indi, i){
         } else {acum = acum + indi}
     return acum;
 }, 0)
-console.log(probando)
+//console.log(probando)
