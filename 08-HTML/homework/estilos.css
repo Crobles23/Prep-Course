@@ -1,0 +1,40 @@
+*{
+    margin: 10;
+    padding: 10;
+    border: 10;
+}
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif; color: rgb(224, 220, 220);
+}
+body{
+    margin: 100px;
+    padding: 0;
+    background: url(./assets/ultrafondo.jpg);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    color: beige;
+}
+a{
+    color: aqua;
+}
+img{
+    display: flex;
+    width: 200px;
+    
+}
+
+#imagen{
+    margin: auto;
+    height: 267px;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid rgb(94, 97, 95);
+}
+
+section{
+   text-align-last: center;
+
+}
+
+
