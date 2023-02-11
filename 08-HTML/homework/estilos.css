@@ -37,4 +37,14 @@ section{
 
 }
 
+#colum{
+    column-count:5
+}
+
+#tex{
+    text-align-last: left;
+}
+ #text{
+    text-align-last: left;
+ }
 
